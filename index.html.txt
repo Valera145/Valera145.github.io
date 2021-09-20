@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = UTF-8">
+		<title> My first page </title>
+	</head>
+	
+	<body>
+		<ol>
+			<li> <a target = _blank href = "http://example.com"> 1 </a> </li>
+			<li> <a target = _blank href = "https://example.com"> 2 </a> </li>
+			<li> <a target = _blank href = "ftp://roma:123@example.com/myfile.zip"> 3 </a>
+			<li> <a target = _blank href = "https://ru.wikipedia.org/wiki/Заглавная_страница#Сергей_Геннадьевич_Алифиренко"> 5 </a> </li>
+			<li> <a href = "#element_id"> К фрагменту </a>
+			<li> <a target = _blank href = "http://example.com?productid=1234"> 7 </a> </li>
+			<li> <a> 9 </a> </li>
+			<li> <a href = ""> 10 </a> </li>
+			<li> <a href = "http://example.com" rel="nofollow"> 11 </a> </li>
+			<li> <a href = "http://example.com" rel="noindex"> 12 </a>  </li>
+			<li> What is it a strange word?<a href = "http://example.com" target = _blank> Macaroon. </a> It seems that it has appeared recently and belongs to these modern words. But it is not true.</li>
+			<li> <a href = "http://example.com"> <img src="image.jpg" width = "200 px" high = "200 px"  "> </a> </li>
+			<li> <a href = "/about" target = _blank> 17 </a> </li>
+			<li> <a href = "../about" target = _blank> 18 </a> </li>			
+			<li> <a  href = "../../about.html"> 19 </li>
+	</body>
+</html>          

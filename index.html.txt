@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = UTF-8">
+		<title> My first page </title>
+	</head>
+	
+	<body>
+		<ol>
+			<li> <a target = _blank href = "http://example.com"> 1 </a> </li>
+			<li> <a target = _blank href = "https://example.com"> 2 </a> </li>
+			<li> <a target = _blank href = "ftp://roma:123@example.com/myfile.zip"> 3 </a>
+			<li> <a target = _blank href = "https://ru.wikipedia.org/wiki/Заглавная_страница#Сергей_Геннадьевич_Алифиренко"> 5 </a> </li>
+			<li> <a href = "#element_id"> К фрагменту </a>
+			<li> <a target = _blank href = "http://example.com?productid=1234"> 7 </a> </li>
+			<li> <a> 9 </a> </li>
+			<li> <a href = ""> 10 </a> </li>
+			<li> <a href = "http://example.com" rel="nofollow"> 11 </a> </li>
+			<li> <a href = "http://example.com" rel="noindex"> 12 </a>  </li>
+			<li> What is it a strange word?<a href = "http://example.com" target = _blank> Macaroon. </a> It seems that it has appeared recently and belongs to these modern words. But it is not true.</li>
+			<li> <a href = "http://example.com"> <img src="image.jpg" width = "200 px" high = "200 px"  "> </a> </li>
+			<li> <a href = "/about" target = _blank> 17 </a> </li>
+			<li> <a href = "../about" target = _blank> 18 </a> </li>			
+			<li> <a  href = "../../about.html"> 19 </li>
+		</ol>
+		<br>
+		<br>
+		<p id ="#element_id"> Фрагмент страницы </p>
+		<br>
+		<br>
+		<label>
+			ФИО:
+			<br>
+			<input name = "field-name-1" value = "Иван"> 
+		</label>
+		<br>
+		<br>
+		<label>
+			email:
+			<br>
+			<input name = "field-name-1" value = "name@example.ru"> 
+		</label>
+		<br>
+		<br>
+		<label>
+			Дата рождения:
+			<br>
+			<input name="field-date" value = "2021-09-12" type = "date">
+		</label>
+		<br>
+		<br>
+		"Пол:"
+		<br>
+		<label>
+			<input type="radio" checked="checked" name ="radio-group-1" value = "Значение1">
+			Мужской
+		</label>
+		<label>
+			<input type="radio" name="radio-group-1" value="Значение2">
+			Женский
+		</label>
+		<br>
+		<br>
+		<label>
+			Сверхспособности
+			<br>
+			<select name="field-name-4[]" multiple="multiple">
+				<option value="Значение1">Бессмертие</option>
+				<option value="Значение2"selected="selected"> Прохождение сквозь стены </option>
+				<option value="Значение3"selected="selected"> Левитация </option>
+			</select>
+		</label>
+		<br>
+		<br>
+		<label>
+			Биография
+		<br>
+		<textarea name="field-name-2"> Начальное значение </textarea>
+		</label>
+		<br>
+		<br>
+		<label>
+			<input type="checkbox" checked="checked" name="check-1">
+			 С пользовательским соглашением ознакомлен(-а) и согласен(-на)
+		</label>
+		<br>
+		<br>
+		<input type="submit" value="Отправить">
+	</body>
+</html>
+
+      

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Мой сайт </title>
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="style2.css" />
+ </head>
+
+  <body>
+   <header class="container-fluid mb-2 py-3">
+      <div>
+       <img class="me-3" src="logo.png" alt="Логотип NERV" width="67" height="64">
+       <h1> Мой сайт 4 </h1>
+      </div>
+   </header>
+   
+   <div>
+     <nav>
+       <div class="row">
+         <div class="col-md-4"> <a href="#список" id="link1">Список</a></div>
+         <div class="col-md-4"> <a href="#таблица" id="link2">Таблица</a></div>
+         <div class="col-md-4"> <a href="#form" id="link3">Форма</a></div>
+       </div>
+     </nav>
+   </div>
+
+   <div class="container-fluid row">
+     <div class="link-list mt-2 col-12 order-1 order-md-1">
+       <ol id="список">
+        <li><a href="http://example.com" id="Пример1">Пример1</a></li>
+        <li><a href="https://example.com">Пример2</a></li>
+        <li><a href="ftp://example.com/file.txt">Без авторизации</a></li>
+        <li><a href="ftp://login:parol@example.com/file.txt">Авторизация</a></li>
+        <li><a href="https://www.championat.com/auto/news-4452823-mazepin-o-mike-shumahere-trudno-konkurirovat-s-superzvezdoj.html#:~:text=Мой">Ссылка на фрагмент другой страницы</a></li>
+        <li><a href="#Пример1">Фрагмент этой страницы</a></li>
+        <li><a href="http://example.com/main?id=35454&width=10">С 2 параметрами</a></li>
+        <li>
+          <ul>
+            <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">КубГУ</a></li>
+            <li><a href="https://www.kubsu.ru/ru/university" title="Об университете">Университет</a></li>
+            <li><a href="https://www.kubsu.ru/ru/education" title="О факультетах">Образование</a></li>
+          </ul>
+        </li>
+        <li><a title="Что?">Без href</a></li>
+        <li><a href="">href пустой</a></li>
+        <li><a href="https://example.com/" rel="nofollow">Запрещен переход</a></li>
+        <li><a href="https://example.com" rel="nofollow" content="noindex">Без индексации</a></li>
+        <li>
+        </li>
+        
+        <li>
+          <img src="map.jpg" usemap="#figure" alt="fig">
+          <map name="figure">
+            <area shape="rect" coords="25,25,125,125" href="https://en.wikipedia.org/wiki/Square" alt="kvadr">
+            <area shape="circle" coords="200,75,50" href="https://en.wikipedia.org/wiki/Circle" alt="krug">
+          </map>
+        </li>
+        <li><a href="news.html">Относительная</a></li>
+        <li><a href="about/15">Относительная в каталоге about</a></li>
+        <li><a href="../about">В каталоге уровнем выше текущего</a></li>
+        <li><a href="../../about">В каталоге двумя уровнями выше</a></li>
+        <li><a href="/">Сокращенная на главную</a></li>
+        <li><a href="/news/12">Сокращенная на внутреннюю</a></li>
+        </ol>
+     </div>
+    
+       
+     <div class="table mt-2 p-1 col-12 order-3 order-md-2">
+        <h2 id="таблица">Таблица</h2>
+        <table>
+        <tr>
+          <th> Страна </th>
+            <th>Столица </th>
+            <th> Население </th>
+        </tr>
+        <tr>
+          <td>Россия </td>
+            <td>Москва </td>
+            <td>140 млн</td>
+        </tr>
+        <tr>
+          <td colspan="2">США</td>
+            <td>330 млн </td>
+        </tr>
+        <tr>
+          <td>Китай </td>
+            <td>Пекин </td>
+            <td>1400 млн </td>
+        </tr>
+        <tr>
+           <td>Мексика </td>
+            <td>Мехико</td>
+            <td>130 млн </td>
+        </tr>
+        <tr>
+          <td>Германия </td>
+            <td>Берлин</td>
+            <td>80 млн </td>
+        </tr>
+        </table>
+     </div>
+
+      <div class="form col-12 order-2 order-md-3">
+        <h1 id="form"> Форма </h1>
+        <form action="/" method="POST">
+          <label>
+            Имя:<br />
+            <input name="field-name" value="Иван" />
+          </label><br />
+
+          <label>
+            Еmail:<br />
+            <input name="field-email" value="test@example.com" type="email"/>
+          </label><br />
+
+          <label>
+            Дата рождения:<br />
+            <input name="field-birth" value="2000-01-01" type="date"/>
+          </label><br />
+
+          Пол:<br />
+          <label>
+            <input type="radio" checked="checked" name="radio-group-1" value="Мужской"/>
+            Мужской
+          </label>
+          <label>
+           <input type="radio" name="radio-group-1" value="Женский"/>
+           Женский
+         </label>
+         <label>
+           <input type="radio" name="radio-group-1" value="Отсутствует"/>
+           Отсутствует
+         </label><br />
+
+          Количество  :<br />
+         <label>
+           <input type="radio" name="radio-group-2" value="0"/>
+           0
+         </label>
+         <label>
+           <input type="radio" name="radio-group-2" value="1"/>
+           1
+         </label>
+          <label>
+            <input type="radio" name="radio-group-2" value="2"/>
+            2
+          </label>
+          <label>
+            <input type="radio" name="radio-group-2" value="3"/>
+            3
+          </label>
+          <label>
+           <input type="radio" checked="checked" name="radio-group-2" value="4"/>
+            4
+          </label><br />
+
+          <label>
+            Цвета :
+            <br />
+            <select name="field-listbox" multiple="multiple">
+              <option value="красный ">красный </option>
+              <option value="синий ">синий </option>
+              <option value="жёлтый " selected="selected">жёлтый </option>
+              <option value="белый ">белый </option>
+            </select>
+          </label><br />
+
+          <label>
+            Биография:<br />
+            <textarea name="field-bio">Напишите что - нибудь </textarea>
+          </label><br />
+
+          Чекбокс:<br />
+          <label>
+            <input type="checkbox" checked="checked" name="check-1"/>
+          </label><br />
+
+          Отправить :
+          <input type="submit" value="Отправить" />
+      
+        </form>
+      </div>
+   </div>
+  
+    <footer class="p-1 mt-2">
+      (c) Дурнев Валерий 2022
+    </footer>
+    
+  </body>
+
+</html> 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="ru"></html>
+
+<head>
+    <script src="new.js" defer></script>
+
+    <style>
+        body {
+            background-color: blue;
+        }
+        form{
+            background-color: yellow;
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+ 
+            margin: auto;
+        }
+        button{
+            margin-top: 7px;
+        }
+        h1, h3{
+            text-align:center;
+        }
+        .myradios, .mycheckbox{
+            display: none;
+        }
+    </style>
+</head>
+
+<header>
+    <div>
+        <h1 class="font-weight-bold">Калькулятор стоимости услуг  : </h1>
+    </div>
+</header>
+</body>
+    
+    <div>
+        <div id ="content">
+        <form>
+            <label>
+                Дней на пользование услугой :<br />
+                <input class="myfield1" name="field1" type="text" />
+            </label><br /><label></label><br/>
+                Выберете тип
+                <br />
+                <select name="myselect">
+                    <option value="1">Дешёвый </option>
+                    <option value="2">Обычный </option>
+                    <option value="3">Люкс </option>
+                </select>
+            </label><br />
+            <div class="myradios" id="myradios">
+                <br/>Безлемит на:<br/>
+                <label><input type="radio" name="myradio" id ="r1" value="r1">Звонки </label>
+                <label><input type="radio" name="myradio" id ="r2" value="r2">Смс </label>
+                <label><input type="radio" name="myradio" id ="r3" value="r3">Интернет </label>
+              </div>  
+              <div class="mycheckbox" id="mycheckbox">
+                <br/>Дополнительные привилегии:<br/>
+            <label>
+                <input type="checkbox" 
+                        name="check-1" id="c1" />
+                Игровая библиотека
+            </label>
+            <label>
+                <input type="checkbox" 
+                        name="check-2" id="c2"/>
+                Скидка до 80% на товары сотрудников 
+            </label>
+            <label>
+                <input type="checkbox" 
+                        name="check-3" id="c3"/>
+                        Бесплатные аудиокниги 
+            </label><br />
+              </div>
+        </form>
+    </div>
+    <h3 class="font-weight-bold">Итого:</h3>
+        <h3 id="result"></h3>
+    </div>
+</body>
+
+</html>
